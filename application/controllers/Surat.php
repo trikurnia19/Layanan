@@ -304,6 +304,7 @@ class Surat extends CI_Controller
 		$RT					= $this->input->post('rt');
 		$RW					= $this->input->post('rw');
 		$alamat				= $this->input->post('alamat');
+		$provinsi			= $this->input->post('provinsi');
 		$keperluan			= $this->input->post('keperluan');
 		$nama_surat			= 'Surat Keterangan Domisili';
 		$today				= mdate('%Y-%m-%d', now());
@@ -326,6 +327,7 @@ class Surat extends CI_Controller
 			'rt'				=> $RT,
 			'rw'				=> $RW,
 			'alamat'			=> $alamat,
+			'provinsi'			=> $provinsi,
 			'keperluan'			=> $keperluan,
 			'jenis_surat'		=> $nama_surat,
 			'tgl_ajukan_surat'	=> $today,
