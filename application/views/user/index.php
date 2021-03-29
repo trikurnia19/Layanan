@@ -115,10 +115,6 @@
 					<a href="<?= base_url('pengajuan/pembuatanAktalahir'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
 			</div>
-	
-		</div>
-
-		<div class="card-deck m-3">
 
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
@@ -130,6 +126,11 @@
 				
 			</div>
 
+		</div>
+
+		<div class="card-deck m-3">
+
+			
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
@@ -157,10 +158,6 @@
 				</div>
 			</div>
 
-		</div>
-
-		<div class="card-deck m-3">
-		
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
@@ -179,7 +176,10 @@
 				</div>
 				<td></td>
 			</div>
+		</div>
 
+		<div class="card-deck m-3">
+		
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
@@ -198,9 +198,6 @@
 				</div>
 			</div>
 
-		</div>
-
-		<div class="card-deck m-3">
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
@@ -227,8 +224,12 @@
 					<a href="<?= base_url('user/sk_kelahiran'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
 			</div>
+		</div>
 
-			<div class="card pt-3">
+		<!-- <div class="card-deck m-3">
+			
+
+			<!-- <div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
 					<h5 class="card-title">FORM KTP?</h5>
@@ -236,9 +237,9 @@
 					<a href="<?= base_url('pengajuan/ktp'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
 				<td></td>
-			</div>
+			</div> -->
 
-		</div>
+		<!-- </div> -->
 	
 	</div>
 	
