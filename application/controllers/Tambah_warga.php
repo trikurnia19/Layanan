@@ -7,20 +7,22 @@ class Tambah_warga extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->library('pdf');
-		$this->load->model("M_surat_n1_n6");
+        $this->load->model("M_surat_n1_n6");
 		$this->load->model("Usermodel");
 		$this->load->helper('date');
 	}
 
 	public function update_kkbaru_batal($id_kkbaru)
 	{
+		$this->load->model("M_surat_n1_n6");
 		$where = array(
 			'id_kkbaru' => $id_kkbaru
 		);
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('pb_kkbaru', $data);
 		redirect('user');
 	}
 
@@ -32,7 +34,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('pb_kk', $data);
 		redirect('user');
 	}
 
@@ -44,7 +47,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('pb_ktp', $data);
 		redirect('user');
 	}
 
@@ -56,7 +60,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('pb_akta', $data);
 		redirect('user');
 	}
 
@@ -68,7 +73,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('pb_izin', $data);
 		redirect('user');
 	}
 
@@ -80,7 +86,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('pb_migrasi', $data);
 		redirect('user');
 	}
 
@@ -92,7 +99,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('sk_belummenikah', $data);
 		redirect('user');
 	}
 
@@ -104,7 +112,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('sk_kelakuanbaik', $data);
 		redirect('user');
 	}
 
@@ -116,7 +125,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('sk_tidakmampu', $data);
 		redirect('user');
 	}
 	
@@ -128,7 +138,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('sk_domisili', $data);
 		redirect('user');
 	}
 
@@ -140,7 +151,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('sk_serba', $data);
 		redirect('user');
 	}
 	
@@ -152,7 +164,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('sk_kelahiran', $data);
 		redirect('user');
 	}
 
@@ -164,7 +177,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('sk_kematian', $data);
 		redirect('user');
 	}
 
@@ -176,7 +190,8 @@ class Tambah_warga extends CI_Controller
 		$data = array(
 			'status_surat' => "Dibatalkan",
 		);
-		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		$this->db->where($where);
+        $this->db->update('sk_pindah', $data);
 		redirect('user');
 	}
 	
